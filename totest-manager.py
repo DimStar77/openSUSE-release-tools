@@ -403,7 +403,7 @@ class ToTestBase(object):
             return None
 
         # docker container has no size limit
-        if re.match(r'opensuse-.*-image.*', package):
+        if re.match(r'(opensuse|kubic)-.*-image.*', package):
             return None
 
         if '-Addon-NonOss-ftp-ftp' in package:
